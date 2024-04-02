@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+ <title> perodiac table</title>
+ <head> 
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+table {
+    background-color: white;
+    font-family: popins;
+    border-collapse: collapse;
+    width: 90vw;
+    margin-left: 1.5vw;
+	margin-top:-60px;
+}
+
+td {
+    position: relative;
+    text-align: center;
+    width: 3vw; 
+    border: 1px solid black;
+    border-width: 3px;
+    color: black;
+    font-weight: 700;
+    padding-top: 10px;
+	padding-bottom:10px;
+	padding-left:15px;
+	padding-right:15px;
+    font-size: 14px;      
+}
+
+div{
+ 
+margin-right:170px;
+
+}
+ h1{
+
+ }
+ h6{
+ margin-right:220px;
+ 
+ }
+ 
+  h5{
+ margin-right:240px;
+ 
+ }
+ 
+ 
+.H::before {
+    content: '1A';
+    position: absolute;
+    top: -21px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+    opacity: .6;
+    font-style: normal;
+}
+
+.BE::before {
+    content: '2A';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+    opacity: .6;
+    font-style: normal;
+}
+
+.Co::before {
+    content: '8B';
+    position:absolute;
+    top: -25px;
+    left: 35px;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+    opacity: .6;
+    font-style: normal;
+}
+
+.line::before {
+    position:absolute;
+    top: -25px;
+    left: 50%;
+    font-size: 0.9em;
+    content: '';
+    transform: rotate(-180deg);
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    width: 85%;
+    height: 21%;
+    opacity: 0.6;
+    margin-top: 3px;
+}
+
+.line2::before {
+    position:absolute;
+    top: -25px;
+    left: -20px;
+    content: '';
+    transform: rotate(-180deg);
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    width: 90%;
+    height: 21%;
+    opacity: 0.6;
+    margin-top: 3px;
+}
+
+   .Sc::before {
+    content: '3B';
+    position:absolute;
+    top: -20px;
+    left: 40px;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+    opacity: .6;
+    font-style: normal;
+}  
+ 
+ 
+ 
+   .Ti::before {
+    content: '4B';
+    position:absolute;
+    top: -20px;
+    left: 35px;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+    opacity: .6;
+    font-style: normal;
+}  
+ 
+ 
+   .V::before {
+    content: '5B';
+    position:absolute;
+    top: -20px;
+    left: 35px;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+    opacity: .6;
+    font-style: normal;
+}  
+ 
+ 
+   .Cr::before {
+    content: '6B';
+    position:absolute;
+    top: -20px;
+    left: 35px;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+    opacity: .6;
+    font-style: normal;
+}  
+ 
+ 
+   .Mn::before {
+    content: '7B';
+    position:absolute;
+    top: -20px;
+    left: 35px;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+    opacity: .6;
+    font-style: normal;
+}  
+ 
+ 
+   .Cu::before {
+    content: '1B';
+    position:absolute;
+    top: -20px;
+    left: 35px;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+    opacity: .6;
+    font-style: normal;
+}  
+ 
+ 
+ 
+   .Zn::before {
+    content: '2B';
+    position:absolute;
+    top: -20px;
+    left: 35px;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+    opacity: .6;
+    font-style: normal;
+}  
+
+
+   .B::before {
+    content: '3A';
+    position:absolute;
+    top: -20px;
+    left: 35px;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+    opacity: .6;
+    font-style: normal;
+}  
+
+
+   .C::before {
+    content: '4A';
+    position:absolute;
+    top: -20px;
+    left: 35px;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+    opacity: .6;
+    font-style: normal;
+}  
+
+
+   .N::before {
+    content: '5A';
+    position:absolute;
+    top: -20px;
+    left: 35px;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+    opacity: .6;
+    font-style: normal;
+}  
+   .O::before {
+    content: '6A';
+    position:absolute;
+    top: -20px;
+    left: 35px;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+    opacity: .6;
+    font-style: normal;
+}  
+
+
+   .F::before {
+    content: '7A';
+    position:absolute;
+    top: -20px;
+    left: 35px;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+    opacity: .6;
+    font-style: normal;
+}  
+   .He::before {
+    content: '8A';
+    position:absolute;
+    top: -20px;
+    left: 35px;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+    opacity: .6;
+    font-style: normal;
+} 
+.table1 {
+    background-color: white;
+    font-family: popins;
+    border-collapse: collapse;
+	margin-left:90px;
+	margin-top:5px;
+	float:left;
+}
+
+.table1 td {
+    position: relative;
+    text-align: center;
+    width: 3vw; 
+    border: 1px solid black;
+    border-width: 3px;
+    color: black;
+    font-weight: 700;
+    padding-top: 20px;
+	padding-bottom:20px;
+    font-size: 14px;      
+} 
+ h3
+{
+margin-left:-90px;
+}
+
+
+</style>
+ </head>
+ 
+<body>
+
+  <center>
+
+<h1 align="center"> Periodic Table of element </h1>
+
+   <div align="right"> <a href="http://Chemistry.About.com"> http://Chemistry.About.com </a></div>
+    <h6 align="right">@2012 Tood Helmenshine</h6>
+    <h5 align="right">About Chemistry  </h5>
+
+   </div>
+
+
+  <table>
+   
+       <tr>
+        <td class="H"><span class="count">1</span><br><br> H<br><br><span class="numbers">1,05794</span></td>
+        <td style="border: none;" colspan="16"></td>
+        <td class="He"><span class="count">2</span><br><br>He<br><br><span class="numbers">4,00260</span> </td>
+    </tr>
+    
+       
+ 
+  <tr>
+        <td><span class="count"> 3</span><br><br>Li<br><br><span class="numbers">6,541</span></td>
+        <td class="BE"><span class="font"> 4</span><br><br>Be <br><br> <span class="numbers">9,012182</span> </td>
+        <td colspan="10" style="border: none;"></td>
+        <td class="B"><span class="count">5</span><br><br>B<br><br><span class="numbers">10,811</span></td>
+        <td class="C"><span class="count">6</span><br><br>C<br><br><span class="numbers">12,0107</span></td>
+        <td class="N"><span class="count">7</span><br><br>N<br><br><span class="numbers">14,0067</span></td>
+        <td class="O"><span class="count">8</span><br><br>O<br><br><span class="numbers">15,9994</span></td>
+        <td class="F"><span class="count">9</span><br><br>F<br><br><span class="numbers">18,99032</span></td>
+        <td><span class="count">10</span><br><br>Ne<br><br><br><span class="numbers">20,1797</span></td>
+    </tr>
+    
+       
+    
+       <tr>
+        <td><span class="count">11</span><br><br>Na<br><br><span class="numbers">22,91979</span></td>
+        <td><span class="count">12</span><br><br>Mg<br><br><span class="numbers">24,3050</span></td>
+        <td colspan="10" style="border: none;"></td>
+        <td><span class="count">13</span><br><br>Al<br><br><span class="numbers">36,91151</span></td>
+        <td><span class="count">14</span><br><br>Si<br><br><span class="numbers">20,0015</span></td>
+        <td><span class="count">15</span><br><br>P<br><br><span class="numbers">30,97376</span></td>
+        <td><span class="count">16</span><br><br>S<br><br><span class="numbers">32,065</span></td>
+        <td><span class="count">17</span><br><br>Cl<br><br><span class="numbers">35,453</span></td>
+        <td><span class="count">18</span><br><br>Ar<br><br><span class="numbers">39,940</span></td>
+    </tr>
+    
+
+  
+   <tr>
+        <td><span class="count">19</span><br><br>K<br><br><span class="numbers">99,0981</span></td>
+        <td><span class="count">20</span><br><br>Ca<br><br><span class="numbers">40,078</span></td>
+        <td class="Sc"><span class="count">21</span><br><br>Sc<br><br><span class="numbers">40,078</span></td>
+        <td class="Ti"><span class="count">22</span><br><br>Ti<br><br><span class="numbers">47,807</span></td>
+        <td class="V"><span class="count">23</span><br><br>V<br><br><span class="numbers">00,9456</span></td>
+        <td class="Cr"><span class="count">24</span><br><br>Cr<br><br><span class="numbers">91,9091</span></td>
+        <td class="Mn"><span class="count">25</span><br><br>Mn<br><br><span class="numbers">54,93805</span></td>
+        <td class="line"><span class="count">26</span><br><br>Fe<br><br><span class="numbers">65,846</span></td>
+        <td class="Co"><span class="count">27</span><br><br>Co<br><br><span class="numbers">58,03319</span></td>
+        <td class="line2"><span class="count">28</span><br><br>Ni<br><br><span class="numbers">58,0034</span></td>
+        <td class="Cu"><span class="count">29</span><br><br>Cu<br><br><span class="numbers">68,045</span></td>
+        <td class="Zn"><span class="count">30</span><br><br>Zn<br><br><span class="numbers">00,68</span></td>
+        <td><span class="count">31</span><br><br>Ga<br><br><span class="numbers">60,723</span></td>
+        <td><span class="count">32</span><br><br>Ge<br><br><span class="numbers">12,64</span></td>
+        <td><span class="count">33</span><br><br>As<br><br><span class="numbers">74,92160</span></td>
+        <td><span class="count">34</span><br><br>Se<br><br><span class="numbers">78,06</span></td>
+        <td><span class="count">35</span><br><br>Br<br><br><span class="numbers">70,004</span></td>
+        <td><span class="count">36</span><br><br>Kr<br><br><span class="numbers">85,708</span></td>
+    </tr>
+  
+  <tr>
+   <td><span class="font">37</span><br><br>Rb<br><br><span>22,91979</span></td>
+    <td><span class="font">38</span><br><br>Sr<br><br><span>24,3050</span></td>
+    <td><span class="font">39</span><br><br>Y<br><br><span>22,91979</span></td>
+    <td><span class="font">40</span><br><br>Zr<br><br><span>24,3050</span></td>
+    <td><span class="font">41</span><br><br>Nb<br><br><span>36,91151</span></td>
+    <td><span class="font">42</span><br><br>Mo<br><br><span>20,0015</span></td>
+    <td><span class="font">43</span><br><br>Tc<br><br><span>30,97376</span></td>
+    <td><span class="font">44</span><br><br>Ru<br><br><span>32,065</span></td>
+    <td><span class="font">45</span><br><br>Rh<br><br><span>35,453</span></td>
+    <td><span class="font">46</span><br><br>Pd<br><br><span>39,940</span></td>
+    <td><span class="font">47</span><br><br>Ag<br><br><span>22,91979</span></td>
+    <td><span class="font">48</span><br><br>Cd<br><br><span>24,3050</span></td>
+    <td><span class="font">49</span><br><br>In<br><br><span>36,91151</span></td>
+    <td><span class="font">50</span><br><br>Sn<br><br><span>20,0015</span></td>
+    <td><span class="font">51</span><br><br>Sb<br><br><span>30,97376</span></td>
+    <td><span class="font">52</span><br><br>Te<br><br><span>32,065</span></td>
+    <td><span class="font">53</span><br><br>I<br><br><span>35,453</span></td>
+    <td><span class="font">54</span><br><br>Xe<br><br><span>39,940</span></td>
+</tr>
+  
+  
+  <tr>
+   <td><span class="font">55</span><br><br>Na<br><br><span>22,91979</span></td>
+    <td><span class="font">56</span><br><br>Mg<br><br><span>24,3050</span></td>
+    <td><span class="font">57-71</span><br><br>Na<br><br><span>22,91979</span></td>
+    <td><span class="font">72</span><br><br>Mg<br><br><span>24,3050</span></td>
+    <td><span class="font">73</span><br><br>Al<br><br><span>36,91151</span></td>
+    <td><span class="font">74</span><br><br>Si<br><br><span>20,0015</span></td>
+    <td><span class="font">75</span><br><br>P<br><br><span>30,97376</span></td>
+    <td><span class="font">76</span><br><br>S<br><br><span>32,065</span></td>
+    <td><span class="font">77</span><br><br>Cl<br><br><span>35,453</span></td>
+    <td><span class="font">78</span><br><br>Ar<br><br><span>39,940</span></td>
+    <td><span class="font">79</span><br><br>Na<br><br><span>22,91979</span></td>
+    <td><span class="font">80</span><br><br>Mg<br><br><span>24,3050</span></td>
+    <td><span class="font">81</span><br><br>Al<br><br><span>36,91151</span></td>
+    <td><span class="font">82</span><br><br>Si<br><br><span>20,0015</span></td>
+    <td><span class="font">83</span><br><br>P<br><br><span>30,97376</span></td>
+    <td><span class="font">84</span><br><br>S<br><br><span>32,065</span></td>
+    <td><span class="font">85</span><br><br>Cl<br><br><span>35,453</span></td>
+    <td><span class="font">86</span><br><br>Ar<br><br><span>39,940</span></td>
+</tr>
+  
+  
+  <tr>
+   <td><span class="font">87</span><br><br>Fr<br><br><span>22,91979</span></td>
+    <td><span class="font">88</span><br><br>Ra<br><br><span>24,3050</span></td>
+    <td><span class="font">89-103</span><br><br><span>22,91979</span></td>
+    <td><span class="font">104</span><br><br>Rf<br><br><span>24,3050</span></td>
+    <td><span class="font">105</span><br><br>Db<br><br><span>36,91151</span></td>
+    <td><span class="font">106</span><br><br>Sg<br><br><span>20,0015</span></td>
+    <td><span class="font">107</span><br><br>Bh<br><br><span>30,97376</span></td>
+    <td><span class="font">108</span><br><br>Hs<br><br><span>32,065</span></td>
+    <td><span class="font">109</span><br><br>Mt<br><br><span>35,453</span></td>
+    <td><span class="font">110</span><br><br>Ds<br><br><span>39,940</span></td>
+    <td><span class="font">111</span><br><br>Rg<br><br><span>22,91979</span></td>
+    <td><span class="font">112</span><br><br>Cn<br><br><span>24,3050</span></td>
+    <td><span class="font">113</span><br><br>Uut<br><br><span>36,91151</span></td>
+    <td><span class="font">114</span><br><br>Fl<br><br><span>20,0015</span></td>
+    <td><span class="font">115</span><br><br>Uup<br><br><span>30,97376</span></td>
+    <td><span class="font">116</span><br><br>Lv<br><br><span>32,065</span></td>
+    <td><span class="font">117</span><br><br>Uus<br><br><span>35,453</span></td>
+    <td><span class="font">118</span><br><br>Uuo<br><br><span>39,940</span></td>
+</tr>
+  
+</table>
+<br>
+<br>
+
+  <table class="table1">
+  <tr>
+  <th><h3>Lanthandies</h3></th>
+  <td><span class="font">57</span><br><br>La<br><br><span>22,91979</span></td>
+    <td><span class="font">58</span><br><br>Ce<br><br><span>24,3050</span></td>
+    <td><span class="font">59</span><br><br>Pr<br><br><span>22,91979</span></td>
+    <td><span class="font">60</span><br><br>Nd<br><br><span>24,3050</span></td>
+    <td><span class="font">61</span><br><br>Pm<br><br><span>36,91151</span></td>
+    <td><span class="font">62</span><br><br>Sm<br><br><span>20,0015</span></td>
+    <td><span class="font">63</span><br><br>Eu<br><br><span>30,97376</span></td>
+    <td><span class="font">64</span><br><br>Gd<br><br><span>32,065</span></td>
+    <td><span class="font">65</span><br><br>Tb<br><br><span>35,453</span></td>
+    <td><span class="font">66</span><br><br>Dy<br><br><span>39,940</span></td>
+    <td><span class="font">67</span><br><br>Ho<br><br><span>22,91979</span></td>
+    <td><span class="font">68</span><br><br>Er<br><br><span>24,3050</span></td>
+    <td><span class="font">69</span><br><br>TM<br><br><span>36,91151</span></td>
+    <td><span class="font">70</span><br><br>Yb<br><br><span>20,0015</span></td>
+    <td><span class="font">71</span><br><br>Lu<br><br><span>30,97376</span></td>
+  </tr>
+  
+  
+  <tr>
+  <th><h3>Actinides </h3></th>
+  <td><span class="font">89</span><br><br>Na<br><br><span>22,91979</span></td>
+    <td><span class="font">90</span><br><br>Ac<br><br><span>24,3050</span></td>
+    <td><span class="font">91</span><br><br>Th<br><br><span>22,91979</span></td>
+    <td><span class="font">92</span><br><br>Pa<br><br><span>24,3050</span></td>
+    <td><span class="font">93</span><br><br>U<br><br><span>36,91151</span></td>
+    <td><span class="font">94</span><br><br>Np<br><br><span>20,0015</span></td>
+    <td><span class="font">95</span><br><br>Am<br><br><span>30,97376</span></td>
+    <td><span class="font">96</span><br><br>Cm<br><br><span>32,065</span></td>
+    <td><span class="font">97</span><br><br>Bk<br><br><span>35,453</span></td>
+    <td><span class="font">98</span><br><br>Cf<br><br><span>39,940</span></td>
+    <td><span class="font">99</span><br><br>Es<br><br><span>22,91979</span></td>
+    <td><span class="font">100</span><br><br>FM<br><br><span>24,3050</span></td>
+    <td><span class="font">101</span><br><br>Md<br><br><span>36,91151</span></td>
+    <td><span class="font">102</span><br><br>No<br><br><span>20,0015</span></td>
+    <td><span class="font">103</span><br><br>Lr<br><br><span>30,97376</span></td>
+  </table>
+  
+</center>
+
+</body>
+</html>
