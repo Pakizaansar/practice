@@ -1,0 +1,233 @@
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Cards</title>
+ <style>
+  .header
+  {
+   height:200px;
+   width:100%;
+   border:1px #e6e6eb;
+   background-color:#e6e6eb;
+   align-content:center;
+  }
+
+  .header h1
+  {
+   margin-left:20px;
+  }
+  .container{
+   height:600px;
+   width:100%;
+   display:flex;
+   justify-content:space-between;
+   border:1px solid #c7c9c9;
+
+  }
+
+  .container1{
+   height:500px;
+   width:23%;
+   background-color:#c7c9c9;
+   border:1px #c7c9c9;
+   margin-top:40px;
+
+
+  }
+  .card1
+  {
+   height:50%;
+   width:100%;
+   background-color:#c7c9c9;
+   border:1px solid #c7c9c9;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .card2
+  {
+   height:50%;
+   width:100%;
+   background-color:#fff;
+   border:1px solid #c7c9c9;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  h3{
+   margin-left:20px;
+   color:#6e6c69;
+  }
+  p{
+   margin-left:20px;
+   color:#adacaa;
+  }
+  .container2{
+   height:500px;
+   width:23%;
+   border:1px solid #c7c9c9;
+   background-color:#c7c9c9;
+   margin-top:40px;
+  }
+
+  .card3
+  {
+   height:50%;
+   width:100%;
+   background-color:#c7c9c9;
+   border:1px solid #c7c9c9;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .card4
+  {
+   height:50%;
+   width:100%;
+   background-color:#fff;
+   border:1px solid #c7c9c9;
+  }
+  .container3{
+   height:500px;
+   width:23%;
+   border:1px solid  #c7c9c9;
+   background-color: #c7c9c9;
+   margin-top:40px;
+  }
+
+  .card5
+  {
+   height:50%;
+   width:100%;
+   background-color: #c7c9c9;
+   border:1px solid #c7c9c9;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .card6
+  {
+   height:50%;
+   width:100%;
+   background-color:#fff;
+   border:1px solid #c7c9c9;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .container4{
+   height:500px;
+   width:23%;
+   border:1px solid #c7c9c9;
+   background-color:#c7c9c9;
+   margin-top:40px;
+  }
+  .card7
+  {
+   height:50%;
+   width:100%;
+   background-color:#c7c9c9;
+   border:1px solid #c7c9c9;
+  }
+  .card8
+  {
+   height:50%;
+   width:100%;
+   background-color:#fff;
+   border:1px solid #c7c9c9;
+  }
+  .footer{
+   height:200px;
+   width:100%;
+   border:1px #e6e6eb ;
+   background-color:#e6e6eb;
+
+  }
+  .footer h1
+  {
+   margin-left:20px;
+  }
+
+
+  .container {
+   padding: 0 16px;
+  }
+
+  .container::after, .row::after {
+   content: "";
+   clear: both;
+   display: table;
+  }
+
+
+  @media screen and (max-width: 650px) {
+   .container1 {
+    width: 100%;
+    display: block;
+   }
+   .container2 {
+    width: 100%;
+    display: block;
+   }
+   .container3 {
+    width: 100%;
+    display: block;
+   }
+   .container4 {
+    width: 100%;
+    display: block;
+   }
+   .container {
+    width: 100%;
+    display: block;
+   }
+   .footer{
+    margin-top: 1600px;
+   }
+  }
+  html {
+   box-sizing: border-box;
+  }
+  *, *:before, *:after {
+   box-sizing: inherit;
+  }
+  .footer h1
+ 
+ </style>
+</head>
+<body>
+<div class="header">
+ <h1> Multiple height cards </h1>
+</div>
+<div class="container">
+ <div class="container1">
+  <div class="card1">
+  </div>
+  <div class="card2">
+   <h3>Card 1 </h3>
+   <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut labore et<br> </p>
+  </div>
+ </div>
+ <div class="container2">
+  <div class="card3">
+  </div>
+  <div class="card4">
+   <h3>Card 2 </h3>
+   <p>dolore magna aliqua. Ut enim<br>exercitation ullamco laboris nisi ut<br> aliquip ex ea commodo consequat</p>
+  </div>
+ </div>
+ <div class="container3">
+  <div class="card5">
+  </div>
+  <div class="card6">
+   <h3>Card 3 </h3>
+   <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut labore et<br> </p>
+  </div>
+ </div>
+ <div class="container4">
+  <div class="card7">
+  </div>
+  <div class="card8">
+   <h3>Card 4 </h3>
+   <p>dolore magna aliqua. Ut enim <br>exercitation ullamco laboris nisi ut<br> aliquip ex ea<br> commodo consequat</p>
+  </div>
+ </div>
+
+</div>
+<div class="footer">
+ <h1> Bottom of page </h1>
+</div>
+</body>
+</html>
