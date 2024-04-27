@@ -1,0 +1,778 @@
+<html>
+<head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+ 
+ <title>Clone</title>
+ <style>
+     .container{
+	  background-color:#383434;
+	  border:border-box;
+	  width:100%;
+	 }
+	 .navbar{
+	 height:100px;
+	 width:96%;
+	 background-color:#1f1b1b;
+	 justify-content:center;
+	 display:flex;
+	 margin-left:30px;
+	 border-radius:20px;
+	 border: 5px solid #50b5b5 ;
+	}
+	 .part1{
+	 height:100px;
+	 width:20%;
+	 }
+	 .part1 img{
+	  margin-left:30px;
+	  }
+	 
+	 .part2{
+	 height:100px;
+	 width:60%;
+	 }
+	 .part2 li{
+		list-style:none;
+		float: left;
+		padding: px;	
+		line-height:1 em;	
+		width: 108px;
+		height: 40px;
+		text-align: center;
+		margin-top:20px;
+		margin-left:40px;
+		opacity:0.9;
+	}
+	.part2 li a{
+		display: block;
+		font-size: 28px;
+		text-decoration: none;
+		color: white;
+	} 
+	 .part3{
+	 height:100px;
+	 width:20%; 
+	 }
+	 .part3 button{
+	 border:6px solid #50b5b5;
+	 color:#50b5b5;
+	 background-color:#1f1b1b;
+	 margin-left:-30px;
+	 margin-top:30px;
+	 border-radius:20px;
+	 height:40px;
+	 width:140px;
+	 }
+	 .circle{
+	 height:90px;
+	 width:80px;
+	border:6px solid #50b5b5;
+     border-radius :50%;
+	 transition:background-color 0.5s ease;
+	 margin-left:110px;
+     }
+	 
+  .circle:hover{
+   border :green;
+   }
+	 .header{
+	 height:150px;
+	 width:100%; 
+	 color: white;
+	 }
+	 .header h1{
+	 margin-left:30px;
+	 margin-top:0px;
+	 }
+	 .header h4{
+	 margin-left:30px;
+	 margin-top:40px;
+	 }
+	 .header hr{
+	 width:15%;
+    margin-left:10px;
+    margin-top:-10px;
+    border-color:#50b5b5;	
+	 }
+	 .header2{
+	 width:100%;
+	 height:50px;
+	 display:flex;
+	 justify-content:center;
+	 }
+	 .header2 button{
+	 padding:20px 20px 40px 20px;
+	 border-radius:30px;
+	 color:white;
+	 font-size:16px;
+	 cursor:pointer;
+	  margin:4px;
+	 }
+	 .button1{
+	 background-color:#50b5b5;
+	 border:none;
+	 }
+	 .button2{
+	 border: 2px solid #50b5b5;
+	 background:none;
+	 }
+	 .button3{
+	 border: 2px solid #50b5b5;
+	 background:none;
+	 }
+	 .button4{
+	 border: 2px solid #50b5b5;
+	 background:none;
+	 }
+	 
+	 .header3{
+	 width:100%;
+	 height:50px;
+	 display:flex;
+	 justify-content:center;
+	 margin-top:40px;
+	 }
+	 .header3 button{
+	 padding:10px 20px;
+	 margin:1px;
+	 font-size:16px;
+	 border:none;
+	 cursor:pointer;
+	 border-radius:10px;
+	 }
+	 .button5{
+	 background-color:#fff;
+	 color:#50b5b5;
+	 }
+	.button6{
+	 background-color:#fff;
+	 color:#50b5b5;
+	 }
+	 .button7{
+	 background-color:#fff;
+	 color:#50b5b5;
+	 }
+	 .button8{
+	 background-color:#50b5b5;
+	 color:#fff;
+	 }
+	 
+	 .banner{
+	 height:5100px;
+	 width:96%;
+	 margin-left:30px;
+	 margin-top:30px;
+	 display:flex;
+	 flex-wrap:wrap;
+	 justify-content:space between;
+	 justify-content:space-evenly;
+	 }
+	 
+	 .card1{
+	 width:48%;
+	 border :1px solid;
+	 height:700px;
+	 border-radius:20px;
+	 background-image:linear-gradient(#cc941b,#eba834,#2b2924);
+	 }
+	 .card1 button{
+	 color:#50b5b5;
+	 background:none;
+	 font-size:20px;
+	 margin-top:80px;
+	 margin-left:280px;
+	 }
+	 .card2{
+	 height:800px;
+	 width:48%;
+	 border :1px solid;
+	 margin-left:44px;
+	 border-radius:20px;
+	  background-image:linear-gradient(#cc941b,#eba834,#2b2924);
+	 }
+	 .card2 button{
+	 color:#50b5b5;
+	 background:none;
+	 font-size:20px;
+	 margin-top:80px;
+	 margin-left:330px;
+	 }
+	 .card3{
+	 height:700px;
+	 width:48%;
+	 border :1px solid;
+	 margin-top:-100px;
+	 border-radius:20px;
+	  background-image:linear-gradient(#16dcf2,#356d73,#3b4d4f);
+	 }
+	 .card3 button{
+	 color:#50b5b5;
+	 background:none;
+	 font-size:20px;
+	 margin-top:80px;
+	 margin-left:330px;
+	 }
+	 .card4{
+	 height:800px;
+	 width:48%;
+	 border :1px solid;
+	 margin-left:44px;
+	 border-radius:20px;
+	  background-image:linear-gradient(#165cf2,#384c78,#3c4457);
+	 }
+	 .card4 button{
+	 color:#50b5b5;
+	 background:none;
+	 font-size:20px;
+	 margin-top:80px;
+	 margin-left:330px;
+	 }
+	 .card5{
+	 height:800px;
+	 width:48%;
+	 border :1px solid;
+	 margin-top:-200px;
+	 border-radius:20px;
+	  background-image:linear-gradient(#d9a60f,#eba834,#2b2924);
+	 }
+	 .card5 button{
+	 color:#50b5b5;
+	 background:none;
+	 font-size:20px;
+	 margin-top:80px;
+	 margin-left:330px;
+	 }
+	 .card6{
+	 height:700px;
+	 width:48%;
+	 border :1px solid;
+	 margin-left:44px;
+	 border-radius:20px;
+	  background-image:linear-gradient(#de5252,#a65050,#6b4646);
+	 }
+	 .card6 button{
+	 color:#50b5b5;
+	 background:none;
+	 font-size:20px;
+	 margin-top:80px;
+	 margin-left:330px;
+	 }
+	 .card7{
+	 height:700px;
+	 width:48%;
+	 border :1px solid;
+	 margin-top:-100px;
+	 border-radius:20px;
+	  background-image:linear-gradient(#d94ca5,#804053,#4d3c41);
+	 }
+	 .card7 button{
+	 color:#50b5b5;
+	 background:none;
+	 font-size:20px;
+	 margin-top:80px;
+	 margin-left:330px;
+	 }
+	 .card8{
+	 height:900px;
+	 width:48%;
+	 border :1px solid;
+	 margin-left:44px;
+	 border-radius:20px;
+	  background-image:linear-gradient(#165cf2,#384c78,#3c4457);
+	 }
+	 .card8 button{
+	 color:#50b5b5;
+	 background:none;
+	 font-size:20px;
+	 margin-top:80px;
+	 margin-left:330px;
+	 }
+	 .card9{
+	 height:700px;
+	 width:48%;
+	 border :1px solid;
+	 margin-top:-280px;
+	 border-radius:20px;
+	  background-image:linear-gradient(#de5252,#a65050,#6b4646);
+	 }
+	 .card9 button{
+	 color:#50b5b5;
+	 background:none;
+	 font-size:20px;
+	 margin-top:80px;
+	 margin-left:330px;
+	 }
+	 .card10{
+	 height:900px;
+	 width:48%;
+	 border :1px solid;
+	 margin-left:44px;
+	 border-radius:20px;
+	  background-image:linear-gradient(#cc941b,#eba834,#2b2924);
+	 }
+	 .card10 button{
+	 color:#50b5b5;
+	 background:none;
+	 font-size:20px;
+	 margin-top:80px;
+	 margin-left:0px;
+	 }
+	 .card11{
+	 height:700px;
+	 width:48%;
+	 border :1px solid;
+	 margin-top:-450px;
+	 border-radius:20px;
+	  background-image:linear-gradient(#cc941b,#eba834,#2b2924);
+	 }
+	 .card11 button{
+	 color:#50b5b5;
+	 background:none;
+	 font-size:20px;
+	 margin-top:80px;
+	 margin-left:0px;
+	 }
+	 .card12{
+	 height:700px;
+	 width:48%;
+	 border :1px solid;
+	 margin-left:44px;
+	 border-radius:20px;
+	  background-image:linear-gradient(#d94ca5,#804053,#4d3c41);
+	 }
+	 .card12 button{
+	 color:#50b5b5;
+	 background:none;
+	 font-size:20px;
+	 margin-top:80px;
+	 margin-left:0px;
+	 }
+	 .banner h1{
+	 color:#fff;
+	 margin-left:50px;
+	 margin-top:10px;
+	 }
+	 .banner p{
+	 color:#fff;
+	 font-size:20px;
+	 margin-left:50px;
+	 margin-top:20px;
+	 }
+	 .banner img{
+	  height:500px;
+	  width:700;
+	  margin-left:70px;
+	 margin-top:30px;
+	 }
+	 
+	 .footer{
+	   height:900px;
+	   width:100%;
+	   margin-top:10px;
+	   background-color:#1f1b1b;
+	 }
+	 .section1{
+	    height:150px;
+	    width:100%;
+		border:5px solid white;
+		display:flex;
+		border:none;
+	 }
+	 .colum1{
+	  height:150px;
+	    width:35%;
+		border:1px solid;
+	 }
+	 .colum1 i{
+	 margin-top:60px;
+	 margin-left:110px;
+	 color:green;
+	 }
+	 .colum1 h1{
+	 margin-left:140px;
+	 margin-top:-30px;
+	 color:white;
+	 }
+	  .colum1 h4{
+	 margin-left:140px;
+	 margin-top:-10px;
+	 color:grey;
+	 }
+	 .colum2{
+	  height:150px;
+	    width:35%;
+		border:1px solid;
+	 }
+	 .colum2 i{
+	 margin-top:50px;
+	 margin-left:110px;
+	 color:green;
+	 }
+	 .colum2 h1{
+	 margin-left:140px;
+	 margin-top:-30px;
+	 color:white;
+	 }
+	  .colum2 h4{
+	 margin-left:140px;
+	 margin-top:-10px;
+	 color:grey;
+	 }
+	 .colum3{
+	  height:150px;
+	    width:30%;
+		border:1px solid;
+	 }
+	 .colum3 i{
+	 margin-top:60px;
+	 margin-left:110px;
+	 color:green;
+	 }
+	 .colum3 h1{
+	 margin-left:140px;
+	 margin-top:-30px;
+	 color:white;
+	 }
+	  .colum3 h4{
+	 margin-left:140px;
+	 margin-top:-10px;
+	 color:grey;
+	 }
+	  .section2{
+       height:700px;
+	   width:100%;
+	   border:5px solid white;
+	   border:none;
+	   display:flex;
+	  
+	 }
+	 .bottom1{
+	 height:700px;
+	   width:35%;
+	  border:5px solid white;
+	   border:none;
+	 
+	 }
+	 .bottom1 img{
+	 margin-left:100px;
+	 }
+	 .bottom1 h2 {
+	 margin-left:100px;
+	 color:white;
+	 }
+	 .bottom1 p{
+	 margin-left:100px;
+	 color:grey;
+	 }
+	 
+	 .bottom2{
+	   height:700px;
+	   width:35%;
+	   border:5px solid white;
+	   border:none;
+	 }
+	 .bottom2 hr{
+	 width:50px;
+	 margin-left:140px;
+	 border-color:green;
+	 }
+	 .bottom2 h3{
+	  margin-left:140px;
+	 margin-top:60px;
+	 color:white;
+	 }
+	 .bottom2 h2{
+	  margin-left:120px;
+	 margin-top:60px;
+	 color:white;
+	 }
+	 .bottom2 img{
+	 margin-left:100px;
+	 }
+	 .list1 {
+	 list-style:none;
+	  margin-left:80px;
+	  margin-top:50px;
+	  color:grey;
+	 }
+	 .list1 li{
+	 margin-bottom:10px;
+	 }
+	 
+	 
+	  .list2{
+	 list-style:none;
+	 margin-left:210px;
+	 margin-top:-90px;
+	color:grey;
+	 }
+	 .list2 li{
+	 margin-bottom:10px;
+	 
+	 }
+	 .bottom3{
+	  height:700px;
+	   width:30%;
+	   border:5px solid white;
+	   border:none;
+	 }
+	 .bottom3 hr{
+	 width:50px;
+	  margin-left:140px;
+	  border-color:green;
+	  
+	 }
+	 .bottom3 h3{
+	 margin-left:140px;
+	 margin-top:60px;
+	 color:white;
+	 }
+	 .bottom3 img{
+	 height:60px;
+	 width:60px;
+	 margin-left:20px;
+	 margin-top:50px;
+	 
+	 }
+	 .section3{
+	  width:100%;
+	  height:100px;
+	  border:none;
+	 }
+	 .section3 h3{
+	  margin-left:700px;
+     color:grey;	  
+	 }
+	 .section3 img{
+	 float:right;
+	 margin-top:-30;
+	 margin-right:10px;
+	 }
+ </style>
+ </head>
+ <body>
+ <div class="container">
+ 
+ <div class="navbar">
+ <div class="part1">
+ <img src="images/logo.png"/> 
+ </div>
+ <div class="part2">
+                         <ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Projects</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Blogs</li>
+							<li><a href="#">Contact</a></li>
+						  </ul>
+ </div>
+ <div class="part3">
+ <div class="circle">
+ 
+ <button type="button" value="Contact">Contact</button>
+ </div>
+ </div>
+ </div>
+         <div class="header">
+		 <h4>Explore our </h4>
+		 <h1>Projects</h1>
+		 <hr>
+		 </div>
+ 
+           <div class="header2">
+		   <button class="button1" value=" Web Development">Web Development</button>
+		   <button class="button2" value=" Blockchain">Graphic Design</button>
+		   <button class="button3" value=" Blockchain">Content writting</button>
+		   <button class="button4" value=" Blockchain">Blockchain</button>
+            </div>
+ 
+ 
+         <div class="header3">
+		   <button class="button5" value=" Web Development">Landing page</button>
+		   <button class="button6" value=" Blockchain">Frontend</button>
+		   <button class="button7" value=" Blockchain">Functinality</button>
+		   <button class="button8" value=" Blockchain">Full stack</button>
+            </div>
+			
+			<div class="banner">
+			
+			<div class="card1">
+			<h1> Wrapp<h1> 
+			<p> It is a full stack web app for scrapping products<br>data from different sits like Amazon,Target<br>Walmart and Best Buy </p> 
+             <video loop controls height="300px" width="680px" src="images/kitab.M4v" type="video/M4v">
+			</video>
+			<button class="button" value="View more">View more</button>
+			</div>
+			
+			<div class="card2">
+			<h1>Dizzy Angeles  </h1>
+			<p>This is a Portfolio website of a music artist with<br>complete authentication and an admin<br>dashboard.Firebase is used in the website for the back-end database. This portfolio is created in ReactJs. </p>
+			<center> <video loop controls height="300px" width="680px"  src="images/kitab.M4v" type="video/M4v">
+			</video></center>
+			<button class="button" value="View more">View more</button>
+			</div>
+			
+			<div class="card3">
+			<h1>MCBgit book AI  </h1>
+			<p>It is an AI web app where a user can enter his <br>prompt and get an answer from AI. We have<br>convertedits designfrom figma intoReactjs.<br>Also, we have integratdAI API to make it<br>functional  </p>
+			<center> <video loop controls height="300px" width="680px" "images/kitab.M4v" type="video/M4v">
+			</video></center>
+			<button class="button" value="View more">View more</button>
+			</div>
+			
+			<div class="card4">
+			<h1>Singular Trader Academy  </h1>
+			<p>Singular Trader Academy was bulit in ReactJs and<br>google firebase.it is an online course webapp.<br>There is an  admin panal where the admin can<br>upload his course videos according to chapters.<br>Users can signup and pay aminimumfee for the<br>course subscription. </p>
+			<center> <video loop controls height="300px" width="680px"  src="images/kitab.M4v" type="video/M4v">
+			</video></center>
+			<button class="button" value="View more">View more</button>
+			</div>
+			
+			<div class="card5">
+			<h1>Employees Management  </h1>
+			<p>This is full stack website that has deskyop<br>view.We created it using reactJs and firebase.<br>There are three rules(admin,semiadmin,user.Admin and Semiadmin can upload docs,)and upate the health checkup<br>date for the users(semi admin canonly do for<br> their group).Users can read docs and updatethe<br>admin via website and attempt the quiz then their  score is shown to the admin. </p>
+			 <center><video loop controls height="300px" width="680px"  src="images/kitab.M4v" type="video/M4v">
+			</video></center>
+			<button class="button" value="View more">View more</button>
+			</div>
+			
+			<div class="card6">
+			<h1> Talenya </h1>
+			<p>This is cost calculation website created in<br>ReactJs.ITt has EmailsJs and Material UI<br>compenets On this website, users can calculate<br> the total cost they want to spend to get prepared<br>for interviews.The final report is sent via EmailsJs<br>to user's email adress </p>
+			<center> <video loop controls height="300px" width="680px"  src="images/kitab.M4v" type="video/M4v">
+			</video></center>
+			<button class="button" value="View more">View more</button>
+			</div>
+			<div class="card7">
+			<h1> Plushies </h1>
+			<p>This is a full-stack NFT project that shosNFT art.<br>Admin can control NFT from the<br>dashboard.We developed this projects using ReactJs and firebase.It has multiple pages and<br>a completely responsive design for all devices.<br>It has a modern design with smooth animations. </p>
+			 <center><video loop controls height="300px" width="680px"  src="images/kitab.M4v" type="video/M4v">
+			</video> </center>
+			<button class="button" value="View more">View more</button>
+			</div>
+			<div class="card8">
+			
+			<h1> Feedback Form/ Review Form </h1>
+			<p>This is a user feedback formwith multisteps. It is<br>connected with backend in google firebase. </p>
+			 <img src="images/f.png" height="300px" width="400px"/>
+			<button class="button" value="View more">View more</button>
+			</div>
+			<div class="card9">
+			
+			<h1> Flowriter </h1>
+			<p> Flow writer is a typing project with unique options.<br> It is developed for fluent typing without getting<br>any distractions.It has the ability to switch dark<br>and light thems.Also, the user can manually<br>enter into the typing process and select other<br> options so that the editior can work accordingly.<br>No editing feature prevents backspaces and<br> previous line editing </p>
+			<center> <video loop controls height="300px" width="680px"  src="images/kitab.M4v" type="video/M4v">
+			</video></center>
+			<button class="button" value="View more">View more</button>
+			</div>
+			<div class="card10">
+			
+			<h1> Economico </h1>
+			<p>This is a full stack e-commerce system is developed<br>in ReactJs and google firebase.Users can find<br>great business in different caregories nearby. It<br>works on Andriod and ios.Users can conveniently<br>use the program on mobile,tablest and desktp. </p>
+			 <img src="images/s.png"/>
+			<center><button class="button" value="View more">View more</button></center>
+			</div>
+			<div class="card11">
+			
+			<h1>Lightmo  </h1>
+			<p>This is an event raffle projrct based on mobile<br>app UI. IT has amazing featuresand design. Evenly<br>user can join a live event and win. The event can <br>be created bt admin of the event who can <br>sele t a number of winners.Then, the computer<br> will automatically choose thw winner like a lucky<br>draw. Every user will seethe event, result and<br>flashing screen animation in real time. </p>
+			<center> <video loop controls height="300px" width="680px"  src="images/kitab.M4v" type="video/M4v">
+			</video><center>
+			<button class="button" value="View more">View more</button>
+			</div>
+			<div class="card12">
+			
+			<h1> Tech Kit </h1>
+			<p>Tech kit product is built in ReactJs and Google<br>Firebease. It has sections of admin dashboard and<br>user role. Users can also add cayegories and<br>prodcts. This website is resposiveand has dark light theme.  </p>
+			<center> <video loop controls height="300px" width="680px"  src="images/kitab.M4v" type="video/M4v">
+			</video><center>
+			<button class="button" value="View more">View more</button>
+			</div>
+			
+			</div>
+			
+			
+		<div class="footer">
+		<div class="section1">
+		
+		<div class="colum1">
+	     <i class="fa-solid fa-location-dot"></i> 
+		<h1>Location</h1>
+		<h4>Pakistan</h4>
+     </div> 
+	 <div class="colum2">
+	    <i class="fa-solid fa-id-badge"></i>
+		<h1>Contact (Whatsapp)</h1>
+		<h4>+92 3071991737</h4>
+     </div>
+	 <div class="colum3">
+	 <i class="fa-solid fa-square-envelope"></i>
+		<h1>Email</h1>
+		<h4>smashcode.dev@gmail.com</h4>
+     </div> 
+     </div>
+	 <hr>
+	 
+    <div class="section2">
+		<div class="bottom1">
+		<img src="images/o.png"/>
+		<p>smash code is a web design & development<br>company based in Pakistan,founded in 2019.We<br>are a team of skilled Web desiginer& developers,<br>Graphic designer and content& copy writer.</p>
+		<h2> Registerd by PSEB </h2>
+		<img src="images/2.png"/>
+		
+        </div>
+	
+	<div class="bottom2">
+	     <h3> Quick Links</h3>
+		 <hr>
+		 <ul class="list1">
+		 <li><i class="fa-solid fa-house"></i>Home</li>
+		<li> <i class="fa-solid fa-phone-flip"></i>Contact</li>
+		<li> <i class="fa-solid fa-diagram-project"></i>Projects</li>
+		</ul>
+		<ul class="list2">
+	
+		<li> <i class="fa-solid fa-user"></i>About</li>
+		<li> <i class="fa-brands fa-servicestack"></i>Services</li>
+		<li> <i class="fa-brands fa-blogger"></i>Blogs</li>
+		 </ul>
+		 <h2>what people say about us</h2>
+		 <img src="images/1.png"/>
+		 </div>
+    
+	<div class="bottom3">
+		 <h3> Social-Links</h3>
+		 <hr>
+		 <a href ="images/facebook.png"> <img src="images/facebook.png"></a>
+		 <a href ="images/t.png"> <img src="images/t.png"></a>
+		 <a href ="images/pin.png"> <img src="images/pin.png"></a>
+		 <a href ="images/tick.png"> <img src="images/tick.png"></a>
+		 <a href ="images/instagram.png"> <img src="images/instagram.png"></a><br>
+		 <a href ="images/utube.png"> <img src="images/utube.png"></a>
+		 <a href ="images/q.png"> <img src="images/q.png"></a>
+		 <a href ="images/git.png"> <img src="images/git.png"></a>
+		 <a href ="images/link.png"> <img src="images/link.png"></a>
+    </div>
+    </div>	
+	</div>			
+   	
+		<div class="section3">
+         <h3> Copyright 2024 , All Right Reserved Smash Code </h3>
+		 <a href ="images/whatsapp.png"> <img src="images/whatsapp.png"></a>
+        </div>	  
+			
+			
+			
+			
+			
+			
+ </div>
+ </body>
+ </html>
+ 
+ 
+ 
